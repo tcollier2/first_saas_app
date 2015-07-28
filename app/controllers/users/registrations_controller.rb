@@ -9,7 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
              if resource.plan_id == 2
                  resource.save_with_payment
              else
-                 resource.save_with_payment
+                 resource.save
              end
          end
       end
