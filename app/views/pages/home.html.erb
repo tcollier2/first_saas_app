@@ -1,3 +1,5 @@
+<%= link_to "Create your profile!", new_user_profile_path(current_user) if current_user %>
+
 <div class="jumbotron text-center">
     <h1>Welcome to Dev Match</h1>
     <h3>A membership site where entrepreneurs can meet developers.</h3>
@@ -8,7 +10,7 @@
             <h2 class="text-center">Basic Membership</h2>
             <h4>Sign up for free and get basic access to the community.</h4>
             </br>
-            <%= link_to "Sign With Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+            <%= link_to "Sign Up With Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
         </div>
     </div>
     
